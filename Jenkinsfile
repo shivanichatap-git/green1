@@ -14,7 +14,7 @@ pipeline {
 			  sh '/home/shivani/Documents/devops/apache-maven-3.9.6/bin/mvn install'
              }}
 		stage('Deployment'){
-		    steps {
+		    steps{
 			script {
 			 if ( env.ENV == 'QA' ){
         	sh 'cp target/green1.war /home/shivani/Documents/devops/apache-tomcat-9.0.88/webapps'
