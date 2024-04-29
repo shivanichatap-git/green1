@@ -28,6 +28,9 @@ pipeline {
                         sh 'cp target/green1.war /home/shivani/Documents/devops/apache-tomcat-9.0.88/webapps'
                         echo "Deployment has been done on UAT!"
                     }
+                    stage('Slack') {
+                        steps {
+                            slackSend baseUrl: 'https://hooks.slack.com/services/', botUser: true, channel: 'green1', color: 'good', message: 'hello green1', notifyCommitters: true, teamDomain: 'devops', tokenCredentialId: 'green1', username: 'green1'
                 }
             }
         }
