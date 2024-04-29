@@ -23,8 +23,7 @@ pipeline {
 			elif ( env.ENV == 'UAT' ){
     		sh 'cp target/green1.war /home/shivani/Documents/devops/apache-tomcat-9.0.88/webapps'
         echo "deployment has been done on UAT!"
-			}
-			echo "deployment has been done!"
-			fi
+				fi
+				
 			}}}	
-}}
+}}}
