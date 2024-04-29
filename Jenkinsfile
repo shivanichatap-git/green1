@@ -26,6 +26,5 @@ pipeline {
 			}
 			echo "deployment has been done!"
 			fi
-			
 			}}}	
 }}
