@@ -1,7 +1,7 @@
 pipeline {
     agent any
     
-    parameters {
+    parameters {  
         choice(name: 'ENV', choices: ['QA', 'UAT'], description: 'Pick Env value')
     }
     
