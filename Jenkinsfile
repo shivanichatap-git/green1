@@ -24,10 +24,11 @@ pipeline {
                     if (env.ENV == 'QA') {
                         sh 'cp target/green1.war /home/shivani/Documents/devops/apache-tomcat-9.0.88/webapps'
                         echo "Deployment has been done on QA!"
-                    } else if (env.ENV == 'UAT') {
+                    } 
+                    else (env.ENV == 'UAT') {
                         sh 'cp target/green1.war /home/shivani/Documents/devops/apache-tomcat-9.0.88/webapps'
                         echo "Deployment has been done on UAT!"
                     }}
         }
     }
-}
+}}
